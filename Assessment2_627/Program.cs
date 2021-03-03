@@ -98,14 +98,14 @@ namespace Assessment2_627
 
                 if (answer == "yes" || answer == "y")
                 {
+                    Console.WriteLine("Your tax code for primary income is 'M'");
                     tc = "M";
-                    Console.WriteLine("Your tax code for primary income is: ",tc);               
                     return tc;
                 }
                 else if (answer == "no" || answer == "n")
                 {
                     Console.WriteLine("To identify your tax code, secondary income is needed");
-                    tc = "Fail";
+                    tc = "n";
                     return tc;
                 }
                 else
@@ -153,14 +153,14 @@ namespace Assessment2_627
 
                                 if (answer == "yes" || answer == "y")
                                 {
+                                    Console.WriteLine("Your tax code for primary income is 'M SL'");
                                     tc = "M SL";
-                                    Console.WriteLine("Your tax code for primary income is: ",tc);
                                     return tc;
                                 }
                                 else if (answer == "no" || answer == "n")
                                 {
+                                    Console.WriteLine("your tax code for primary income is 'M'");
                                     tc = "M";
-                                    Console.WriteLine("your tax code for primary income is: ",tc);
                                     return tc;
                                 }
                                 else
@@ -181,14 +181,15 @@ namespace Assessment2_627
 
                                 if (answer == "yes" || answer == "y")
                                 {
+
+                                    Console.WriteLine("Your tax code for primary income is 'ME SL'");
                                     tc = "ME SL";
-                                    Console.WriteLine("Your tax code for primary income is: ",tc);
                                     return tc;
                                 }
                                 else if (answer == "no" || answer == "n")
                                 {
+                                    Console.WriteLine("your tax code for primary income is 'ME'");
                                     tc = "ME";
-                                    Console.WriteLine("your tax code for primary income is: ",tc);
                                     return tc;
                                 }
                                 else
@@ -216,14 +217,14 @@ namespace Assessment2_627
 
                             if (answer == "yes" || answer == "y")
                             {
+                                Console.WriteLine("Your tax code for primary income is 'M SL'");
                                 tc = "M SL";
-                                Console.WriteLine("Your tax code for primary income is: ",tc);
                                 return tc;
                             }
                             else if (answer == "no" || answer == "n")
                             {
+                                Console.WriteLine("your tax code for primary income is 'M'");
                                 tc = "M";
-                                Console.WriteLine("your tax code for primary income is: ",tc);
                                 return tc;
                             }
                             else
@@ -251,14 +252,14 @@ namespace Assessment2_627
 
                         if (answer == "yes" || answer == "y")
                         {
+                            Console.WriteLine("Your tax code for primary income is 'M SL'");
                             tc = "M SL";
-                            Console.WriteLine("Your tax code for primary income is: ",tc);
                             return tc;
                         }
                         else if (answer == "no" || answer == "n")
                         {
+                            Console.WriteLine("your tax code for primary income is 'M'");
                             tc = "M";
-                            Console.WriteLine("your tax code for primary income is: ",tc);
                             return tc;
                         }
                         else
@@ -267,7 +268,6 @@ namespace Assessment2_627
                             Console.ReadLine();
                             goto Q7;
                         }
-
                     }
                     else
                     {
@@ -275,12 +275,11 @@ namespace Assessment2_627
                         Console.ReadLine();
                         goto Q3;
                     }
-
                 }
                 else if (answer == "no" || answer == "n")
                 {
                     Console.WriteLine("To identify your tax code, secondary income is needed");
-                    tc = "Fail";
+                    tc = "n";
                     return tc;
                 }
                 else
@@ -295,10 +294,9 @@ namespace Assessment2_627
                 Console.WriteLine("Please choose one of yes or no");
                 Console.ReadLine();
                 goto Q0;
+
             }
         }
-
-
     }
 
     class System_2 : User
